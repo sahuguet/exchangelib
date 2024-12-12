@@ -83,6 +83,7 @@ class Item(BaseItem):
     headers = MessageHeaderField(field_uri="item:InternetMessageHeaders", is_read_only=True)
     datetime_sent = DateTimeField(field_uri="item:DateTimeSent", is_read_only=True)
     datetime_created = DateTimeField(field_uri="item:DateTimeCreated", is_read_only=True)
+    retention_date = DateTimeField(field_uri="item:RetentionDate", is_read_only=True)
     response_objects = EWSElementField(
         field_uri="item:ResponseObjects",
         value_cls=ResponseObjects,
